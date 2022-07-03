@@ -28,7 +28,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--sans);
-  background-color: var(--black);
+  background-color: var(--plum);
   /* this refer to the ::root that we have setUp */
   color: var(--white);
   font-size: var(--font-size);
@@ -77,4 +77,61 @@ a:hover {
   font-size: 4rem;
   /* get the font from google */
   font-weight: normal;
+}
+
+/* this is the contact section */
+#contact {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 0rem;
+  background-color: plum;
+}
+
+/* pseudo Class of the last child */
+#contact p:last-child {
+  margin-top: 3rem;
+}
+
+/* The navigation bar */
+
+nav {
+  font-family: var(--mono);
+  font-size: 80%;
+  padding: 1rem;
+}
+
+mav h1 a {
+  font-family: var(--sans);
+}
+
+/* ul li by default have padding / margin depend by browser */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* styling the links */
+
+/* flex-basis: 100% no matter what, all li go elsewhere */
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+  border: 1px solid rgb(43, 255, 0);
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover {
+  color: var(--magenta);
 }
