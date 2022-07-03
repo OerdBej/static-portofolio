@@ -125,13 +125,29 @@ nav li:first-child {
   text-align: center;
   border: 1px solid rgb(43, 255, 0);
 }
+/* font awesome - attribute selector -> look 1 of attribute of html tag */
+
+nav [class*="fa-"] {
+  font-size: 150%;
+  color: var(--aqua);
+}
+
+nav h1 [class*="fa-"] {
+  font-size: 100%;
+  color: var(--aqua);
+}
 
 nav a {
-  color: var(--white);
+  color: white;
   text-decoration: none;
   display: block;
 }
 
 nav a:hover {
+  color: var(--magenta);
+}
+
+nav a:hover,
+nav [class*="fa-"]:hover {
   color: var(--magenta);
 }

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" />
+    <script src="https://kit.fontawesome.com/7d3d17dc3e.js" crossorigin="anonymous"></script>
     <title>Intro css</title>
 </head>
 
@@ -14,16 +15,23 @@
     <nav>
         <ul>
             <li>
-                <h1><a href="index.html">Oerd Bej 🎈</a></h1>
+                <h1><a href="index.html">
+                        <span class="fas fa-code" aria-hidden="true"></span>
+                        <span>Oerd Bej</span>
+                    </a>
+                </h1>
             </li>
-
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li>
-                <a href="https://www.linkedin.com/in/oerdbej/" target="_blank">Linkedin</a>
+                <a href="https://www.linkedin.com/in/oerdbej/" target="_blank"> <span class="fa-brands fa-linkedin"
+                        aria-hidden="true"></span>
+                    <!-- screen reader see it. Web Accessibility, comes from font awesome-->
+                    <span class="sr-only">Linkedin</span></a>
             </li>
-            <li><a href="https://github.com/OerdBej" target="_blank">GitHub</a></li>
+            <li><a href="https://github.com/OerdBej" target="_blank"> <span class="fa-brands fa-github"></span><span
+                        class="sr-only">GitHub</span></a></li>
             <li><a href="#resume" target="_blank">Resume</a></li>
         </ul>
     </nav>
