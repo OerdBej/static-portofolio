@@ -28,7 +28,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--sans);
-  background-color: var(--plum);
+  background-color: var(--black);
   /* this refer to the ::root that we have setUp */
   color: var(--white);
   font-size: var(--font-size);
@@ -48,10 +48,18 @@ a:hover {
   text-decoration: none;
 }
 
+/* background divs */
+
+.section-plum {
+  background-color: var(--plum);
+}
+
 /* intro styles: specific styles */
 
 #intro {
-  padding-bottom: 10rem;
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #intro p {
@@ -85,7 +93,6 @@ a:hover {
   text-align: center;
   margin: 0 auto;
   padding: 3rem 0rem;
-  background-color: plum;
 }
 
 /* pseudo Class of the last child */
@@ -159,6 +166,9 @@ nav [class*="fa-"]:hover {
   background-color: var(--magenta);
   padding: 0.5rem;
   border-radius: 5px;
+  color: white;
+  font-family: var(--mono);
+  text-decoration: none;
 }
 
 .button:hover {
@@ -176,4 +186,35 @@ nav [class*="fa-"]:hover {
     text-align: left;
     margin-right: auto;
   }
+}
+
+/* This will be our footer section */
+
+footer {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2 rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 3rem;
+}
+
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+nav li:first-child {
+  flex-basis: auto;
+  text-align: left;
+  margin-right: auto;
 }
