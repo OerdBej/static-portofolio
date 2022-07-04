@@ -123,7 +123,7 @@ nav ul {
 nav li:first-child {
   flex-basis: 100%;
   text-align: center;
-  border: 1px solid rgb(43, 255, 0);
+  border: 1px solid #a11e1969;
 }
 /* font awesome - attribute selector -> look 1 of attribute of html tag */
 
@@ -150,4 +150,30 @@ nav a:hover {
 nav a:hover,
 nav [class*="fa-"]:hover {
   color: var(--magenta);
+}
+
+/* action button */
+
+/* links usually are with the colors of the button */
+.button {
+  background-color: var(--magenta);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.button:hover {
+  color: var(--white);
+  background-color: var(--hotmag);
+}
+
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
 }
